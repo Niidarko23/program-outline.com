@@ -12,35 +12,24 @@
         <style>
             body {
                 background-color: rgb(252, 215, 218);
-                padding-top: 20px;
+                padding-top: 40px\;
             }
             p {
                 color: rgb(108, 14, 60);
                 margin: 0;
-                font-size: 40px;
+                font-size: 30px;
             }
-        .side-bar{
-            background-color: rgb(252, 196, 201);
-            position: fixed;
-            left: 5px;
-            top: 0px;
-            bottom: 0px;
-            width: 200px;
-            box-shadow: -1px 1px 2px rgb(97, 97, 97);
-            display: flex;
-            flex-direction: column;
-        }
         .flowers-bx {
             position: fixed;
             top: -35px;
             right: -35px;
-            width: 180px;
+            width: 250px;
         }
         .flowers1-bx {
             position: fixed;
             bottom: -35px;
             left: -40px;
-            width: 180px;
+            width: 250px;
             z-index: 2;
             transform: rotate(-180deg);
         }
@@ -70,32 +59,40 @@
             margin-left: px;
         }
         .main-page {
-            padding-left: 225px;
+            padding: 70px;
         }
         .heading {
+            display: flex;
+            flex-direction: column;
             justify-items: center;
             font-family: 'alex brush';
             font-size: 20px;
+            align-content: center;
+            align-items: center;
+            margin-bottom: 40px;
         }
         .welcome {
             margin: 0px;
+            font-size: 40px;
         }
         .words {
             margin: 0;
+            font-size: 40px;
         }
         .couples-names {
             font-family: 'Times New Roman', Times, serif;
-            font-size: 50px;
-            margin-top: 30px;
+            font-size: 80px;
+            margin: 40px;
         }
         .date {
             margin: 20px;
-            border: 1px solid rgb(108, 14, 60);
-            width:450px;
-            height: 50px;
-            padding: 10px;
-            border-radius: 30px;
+            padding:  10px 25px 10px 25px;
+            border-radius: 60px;
             transition: 0.5s;
+            margin-bottom: 60px;
+        }
+        .flower-frame {
+            width: 80%;
         }
         .order-of-event {
             display: flex;
@@ -108,7 +105,7 @@
             vertical-align: middle;
             flex-direction: row;
             align-content: center;
-            gap: 20px;
+            gap: 30px;
             padding: 15px;
             transition: 0.5s;
         }
@@ -157,14 +154,14 @@
             vertical-align: middle;
             align-items: center;
             align-content: center;
-            font-size: 60px;
+            font-size: 40px;
             color: rgb(252, 196, 201);
             font-weight: bolder;
         }
         .item:hover .img-bx{
-            border-radius: 20%;
-            width: 160px;
-            height: 160px;
+            border-radius: 25px;
+            width: 300px;
+            height: 300px;
             opacity: 0.5px;
             object-fit: fill;
             overflow: hidden;
@@ -187,22 +184,15 @@
         <div class="entire-page">
             <div class="flowers-bx"><img class="flowers" src="https://github.com/Niidarko23/program-outline.com/blob/main/flowers.png?raw=true"></div>
             <div class="flowers1-bx"><img class="flowers" src="https://github.com/Niidarko23/program-outline.com/blob/main/flowers.png?raw=true"></div>
-            <div class="side-bar">
-                <div class="couple-names">
-                    <p class="names">Kofi</p>
-                    <p class="names">&amp; Francisca</p>
-                </div>
-                <div class="program-outline">
-                    <img class="poimg" src="https://github.com/Niidarko23/program-outline.com/blob/main/Program-outline1.png?raw=true">
-                </div>
-            </div>
             <div class="main-page">
                 <div class="heading">
                     <p class="welcome">Welcome</p>
                     <p class="words">To the wedding of</p>
                     <p class="couples-names">KOFI &amp; FRANCISCA</p>
+                    <p class="date">Saturday, January 17th</p>
+                    <img src="/flower-frame.png" class="flower-frame">
                 </div>
-                <div><p class="date">Saturday, January 17th</p></div>
+                
                 <div class="order-of-event">
                     <div class="item">
                         <div class="img-bx"><img src="https://i.pinimg.com/1200x/5e/04/a0/5e04a0bbf5f7f3de547cfc4fe0e9b21a.jpg" class="img"></div>
@@ -226,11 +216,11 @@
                     </div>
                     <div class="item">
                         <div class="img-bx"><img src="https://i.pinimg.com/736x/9e/be/ae/9ebeaea554202cd4dcc3bc5a69005af1.jpg" class="img"></div>
-                        <div class="txt-bx"><p class="txt">Welcome and acknowledgment of guests by MC</p></div>
+                        <div class="txt-bx"><p class="txt">Welcome and acknowledgment of guests by <br>&bull; The MC</p></div>
                     </div>
                     <div class="item">
                         <div class="img-bx"><img src="https://i.pinimg.com/1200x/09/a9/89/09a98948e7d8586ed46e2c7ccd527b7c.jpg" class="img"></div>
-                        <div class="txt-bx"><p class="txt">Opening Prayer by Rev. Acheampong Boakye</p></div>
+                        <div class="txt-bx"><p class="txt">Opening Prayer by <br>&bull; Rev. Acheampong Boakye</p></div>
                     </div>
                     <div class="item">
                         <div class="img-bx"><img src="https://i.pinimg.com/736x/f5/92/d3/f592d3330362e236fb81e175f0dc5dbf.jpg" class="img"></div>
@@ -238,11 +228,11 @@
                     </div>
                     <div class="item">
                         <div class="img-bx"><img src="https://i.pinimg.com/736x/da/d1/28/dad128e54343c09a1a62ebc4bc62ae6b.jpg" class="img"></div>
-                        <div class="txt-bx"><p class="txt">Champagne popping by: Dr. Lawson, Desmond Akutey, Mr. Bernard Twum, Alexander Ekow Essuman, Andy Twumasi, Emmanuella Lamptey Mills</p></div>
+                        <div class="txt-bx"><p class="txt">Champagne popping by:<br>&bull; Dr. Lawson, <br>&bull; Desmond Akutey, <br>&bull; Mr. Bernard Twum, <br>&bull; Alexander Ekow Essuman, <br>&bull; Andy Twumasi, <br>&bull; Emmanuella Lamptey Mills</p></div>
                     </div>
                     <div class="item">
                         <div class="img-bx"><img src="https://i.pinimg.com/1200x/c6/05/f9/c605f9dbc0c21abba13c6c8e9228d6ac.jpg" class="img"></div>
-                        <div class="txt-bx"><p class="txt">Toast to the couple by Mr. Micheal Ansah</p></div>
+                        <div class="txt-bx"><p class="txt">Toast to the couple by <br>&bull; Mr. Micheal Ansah</p></div>
                     </div>
                     <div class="item">
                         <div class="img-bx"><img src="https://i.pinimg.com/1200x/0a/eb/c5/0aebc51a7bd562c38096db266a9c7727.jpg" class="img"></div>
@@ -258,16 +248,15 @@
                     </div>
                     <div class="item">
                         <div class="img-bx"><img src="https://i.pinimg.com/736x/88/13/45/88134527526f33f215f956bcd3910940.jpg" class="img"></div>
-                        <div class="txt-bx"><p class="txt">Vote of thanks by Miss Portia</p></div>
+                        <div class="txt-bx"><p class="txt">Vote of thanks by <br>&bull; Miss Portia</p></div>
                     </div>
                     <div class="item">
                         <div class="img-bx"><img src="https://i.pinimg.com/1200x/65/0a/8a/650a8a173c4cf18fa2a8f7e1f335433a.jpg" class="img"></div>
-                        <div class="txt-bx"><p class="txt">Closing Prayer by Rev. Acheampong Boakye</p></div>
+                        <div class="txt-bx"><p class="txt">Closing Prayer by <br>&bull; Rev. Acheampong Boakye</p></div>
                     </div>
                 </div>
             </div>
         </div>
     </body>
 </html>
-
 
